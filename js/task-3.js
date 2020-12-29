@@ -21,14 +21,12 @@ class Storage {
 
   addItem(item) {
     this.items.push(item);
-    return this.items;
   }
 
   removeItem(item) {
     const index = this.items.indexOf(item);
     if (index > -1) {
       this.items.splice(index, 1);
-      return this.items;
     }
   }
 }
